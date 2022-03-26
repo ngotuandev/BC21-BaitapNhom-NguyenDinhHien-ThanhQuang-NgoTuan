@@ -41,6 +41,26 @@
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
+    <div class="menu-fixed">
+      <span class="fa-solid fa-angles-right menu-fixed-right" id="icon--right--left"></span>
+
+    </div>
+    <div class="right-menu">
+      <div class="right-menu-item">
+        <div class="menu-item--row">
+          <a href="https://w3layouts.com/?p=4763800000032896">
+            <span class="fa-solid fa-arrow-left"></span>
+            <span class="text-center pt-2 d-block">Back</span>
+          </a><a href="https://w3layouts.com/template/corp-vision-wordpress-theme/">
+            <span class="fa-solid fa-download"></span>
+            <span class="text-center pt-2 d-block">Download</span>
+          </a><a href="https://w3layouts.com/checkout/?add-to-cart=4763800000032896">
+            <span class="fa-solid fa-cart-shopping"></span>
+            <span class="text-center pt-2 d-block">Buy</span>
+          </a>
+        </div>
+      </div>
+    </div>
     <div class="header--top ">
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-dark">
@@ -104,18 +124,22 @@
                   <i class="fa fa-search icon-material-search"></i>
                 </div>
               </div>
-              
+              <i class="fa-solid fa-xmark icon--close"></i>
+              <form  method="GET" class="form-input">
+                <input class="input-search" name="s" placeholder="Start Typing" type="text">
+                </form>
             </div>
+            <div class="icon-sun-moon">
             <div class="form-check">
               <label class="form-check-label ">
                 <input type="checkbox" class="form-check-input" name="" id="checkbox" value="checkedValue" checked>
                 <div class="icon--moon">
                   <i class="fa fa-sun"></i>
-
                   <i class="fa fa-moon"></i>
                 </div>
               </label>
             </div>
+          </div>
           </div>
         </nav>
       </div>
@@ -1110,6 +1134,7 @@ btn.on('click', function(e) {
     </script>
     <script src="./headerScroll.js"></script>
     <script src="./moon-sun.js"></script>
+    <script src="./right-left-sidebar.js"></script>
 
   </body>
 </html>

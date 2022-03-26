@@ -20,4 +20,9 @@ window.addEventListener("scroll", function () {
   navLinkScroll[4].classList.toggle("nav-link-scroll", window.scrollY > 0);
   var iconMoon = document.querySelector(".fa-moon");
   iconMoon.classList.toggle("icon-moon-scroll", window.scrollY > 0);
+  var dropdownToggle = document.querySelector(".dropdown-toggle");
+  dropdownToggle.classList.toggle(
+    "dropdown-toggle--scroll",
+    window.scrollY > 0
+  );
 });
