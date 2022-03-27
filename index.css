@@ -124,11 +124,11 @@
 }
 
 .menu-item--slide-right {
-    animation: slide-right 0.5s ease-out forwards;
+    animation: slide-right 0.3s ease-out forwards;
 }
 
 .menu-item--slide-left {
-    animation: slide-left 0.5s ease-in forwards;
+    animation: slide-left 0.3s ease-in forwards;
 }
 
 @keyframes slide-right {
