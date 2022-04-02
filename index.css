@@ -397,7 +397,7 @@ input:checked+.icon--moon i.fa-moon {
 .dark,
 .dark .header--scroll,
 .dark .brand--scroll,
-.dark .autoplay .slick-arrow,
+.dark .control-arrow,
 .dark .grid--row,
 .dark .row--item--text a,
 .dark .detail--title,
@@ -416,7 +416,7 @@ input:checked+.icon--moon i.fa-moon {
 .dark .navbar-nav .nav-link-scroll,
 .dark .inner--list li a,
 .dark .grid--row a,
-.dark .autoplay .slick-arrow::before,
+.dark .control-arrow::before,
 .dark .row--item--btn,
 .dark .blog--tile--intro,
 .dark .blog--source--ul li a,
@@ -587,7 +587,7 @@ body.icon--active {
     margin-bottom: 18px;
     max-width: 800px;
     font-weight: 600;
-    animation: flipInX 0.8s;
+    animation-delay: .8s;
 }
 
 .banner--text {
@@ -598,12 +598,11 @@ body.icon--active {
     letter-spacing: 0.010em;
     opacity: .9;
     margin-top: 1.5rem;
-    animation: fadeInDown 1s;
 }
 
 .banner--btn {
     padding-top: 10px;
-    animation: fadeInUp 1s;
+    animation-delay: 1s;
 }
 
 .btn-style {
@@ -627,28 +626,17 @@ body.icon--active {
 }
 
 .title--2 {
-    animation: fadeInDown 0.8s;
     font-size: 63px;
 }
 
-.text--2 {
-    animation: fadeInDown;
-}
 
 .btn--2 {
-    animation: fadeInDown 1s;
+    animation-delay: 1s;
 }
 
-.title--3 {
-    animation: fadeInUp 0.8s;
-}
-
-.text--3 {
-    animation: fadeInUp;
-}
 
 .btn--4 {
-    animation: fadeInUp 1s;
+    animation-delay: 1s;
 }
 
 .banner--overlay {
@@ -661,19 +649,9 @@ body.icon--active {
     z-index: -1;
 }
 
-.slick-prev,
-.slick-next {
-    top: 90%;
-}
-
-.autoplay {
-    height: 100%;
-}
-
-.autoplay .slick-arrow {
-    position: absolute;
-    right: 25px;
-    bottom: 50px;
+.carousel-control-prev {
+    /* top: 90%; */
+    right: 95px !important;
     font-size: 0;
     background: var(--bg-color);
     width: 50px;
@@ -685,20 +663,56 @@ body.icon--active {
     border: 1px solid var(--border-color);
 }
 
-.slick-prev {
-    right: 95px !important;
+.carousel-control-prev,
+.carousel-control-next {
+    top: 90%;
+    opacity: 1 !important;
 }
 
-.autoplay .slick-arrow .slick-prev::before {
+/* 
+.autoplay {
+    height: 100%;
+} */
+.control-prev-next {
+    position: absolute;
+    right: 25px;
+    bottom: 70px;
+}
+
+.control-arrow {
+    /* position: absolute;
+    right: 25px;
+    bottom: 50px; */
+    font-size: 0;
+    background: var(--bg-color);
+    width: 50px;
+    height: 50px;
+    z-index: 12;
+    outline: none;
+    border-radius: 100%;
+    box-shadow: 0 0 15px rgb(0 0 0 / 12%);
+    border: 1px solid var(--border-color);
+}
+
+.carousel-control-prev {
+    right: 70px !important;
+    left: auto;
+}
+
+.control-arrow.carousel-control-prev::before {
     content: "\f060";
 }
 
-.autoplay .slick-arrow::before {
+.control-arrow.carousel-control-next::before {
+    content: "\f061";
+}
+
+.control-arrow::before {
     font: normal normal normal 14px/1 FontAwesome;
     font-size: 16px;
     text-align: center;
     line-height: 46px;
-    color: var(--heading-color);
+    color: var(--bg-color--black) !important;
     opacity: 1;
 }
 
@@ -711,54 +725,6 @@ body.icon--active {
 
 .wave path {
     fill: var(--bg-color);
-}
-
-@keyframes flipInX {
-    0% {
-        opacity: 0;
-        transform: perspective(400px) rotateX(90deg);
-    }
-
-    40% {
-        transform: perspective(400px) rotateX(-20deg);
-    }
-
-    60% {
-        transform: perspective(400px) rotateX(10deg);
-    }
-
-    80% {
-        transform: perspective(400px) rotateX(-5deg);
-    }
-
-    to {
-        opacity: 1;
-        transform: perspective(400px);
-    }
-}
-
-@keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        transform: translate3d(0, -100%, 0);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateZ(0);
-    }
-}
-
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translate3d(0, 100%, 0);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateZ(0);
-    }
 }
 
 /* end banner slide */
@@ -1930,7 +1896,7 @@ a.zoom img:hover {
         text-align: center;
     }
 
-    .slick-initialized .banner-slide {
+    .carousel .banner-slide {
         min-height: 700px !important;
     }
 
@@ -1945,7 +1911,7 @@ a.zoom img:hover {
 }
 
 @media only screen and (max-width: 768px) {
-    .slick-initialized .banner-slide {
+    .carousel .banner-slide {
         min-height: 650px !important;
         padding-bottom: 40px !important;
     }

@@ -26,7 +26,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="./lightbox/lightbox.min.css" />
@@ -145,74 +145,85 @@
       </div>
     </div>
     <div class="banner">
-      <div class="autoplay">
-        <div class="slick-slide">
-          <div class="banner--bg--1 banner-slide">
-            <div class="container banner--content">
-              <h1 class="banner--title">
-                We will solve your issues our vision to your future
-              </h1>
-              <p class="banner--text">
-                Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.
-              </p>
-              <div class="banner--btn">
-                <a href="#" class="btn btn-style btn-primary"> Learn More</a>
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="banner--bg--1 banner-slide">
+              <div class="container banner--content">
+                <h1 class="banner--title animate__animated animate__flipInX">
+                  We will solve your issues our vision to your future
+                </h1>
+                <p class="banner--text animate__animated animate__fadeInDown">
+                  Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.
+                </p>
+                <div class="banner--btn animate__animated animate__fadeInUp">
+                  <a href="#" class="btn btn-style btn-primary"> Learn More</a>
+                </div>
               </div>
+              <div class="banner--overlay"></div>
             </div>
-            <div class="banner--overlay"></div>
           </div>
-        </div>
-        <div class="slick-slide">
-          <div class="banner--bg--2 banner-slide">
-            <div class="container banner--content">
-              <h1 class="banner--title title--2">
-                Embracing success do our best, need best advice
-              </h1>
-              <p class="banner--text text--2">
-                Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.
-              </p>
-              <div class="banner--btn btn--2">
-                <a href="#" class="btn btn-style btn-primary"> Get Started</a>
+          <div class="carousel-item">
+            <div class="banner--bg--2 banner-slide">
+              <div class="container banner--content">
+                <h1 class="banner--title title--2 animate__animated animate__fadeInDown">
+                  Embracing success do our best, need best advice
+                </h1>
+                <p class="banner--text animate__animated animate__fadeInDown">
+                  Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.
+                </p>
+                <div class="banner--btn btn--2 animate__animated animate__fadeInDown">
+                  <a href="#" class="btn btn-style btn-primary"> Get Started</a>
+                </div>
               </div>
+              <div class="banner--overlay"></div>
             </div>
-            <div class="banner--overlay"></div>
           </div>
-        </div>
-        <div class="slick-slide">
-          <div class="banner--bg--3 banner-slide">
-            <div class="container banner--content">
-              <h1 class="banner--title title--3">
-                Digital transformation driven by technology
-              </h1>
-              <p class="banner--text text--3">
-                Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.
-              </p>
-              <div class="banner--btn btn--2">
-                <a href="#" class="btn btn-style btn-primary"> Learn More</a>
+          <div class="carousel-item">
+            <div class="banner--bg--3 banner-slide">
+              <div class="container banner--content">
+                <h1 class="banner--title animate__animated animate__fadeInUp">
+                  Digital transformation driven by technology
+                </h1>
+                <p class="banner--text animate__animated animate__fadeInUp">
+                  Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.
+                </p>
+                <div class="banner--btn btn--2 animate__animated animate__fadeInDown">
+                  <a href="#" class="btn btn-style btn-primary"> Learn More</a>
+                </div>
               </div>
+              <div class="banner--overlay"></div>
             </div>
-            <div class="banner--overlay"></div>
           </div>
-        </div>
-        <div class="slick-slide">
-          <div class="banner--bg--4 banner-slide">
+          <div class="carousel-item">
+            <div class="banner--bg--4 banner-slide">
             <div class="container banner--content">
-              <h1 class="banner--title">
+              <h1 class="banner--title animate__animated animate__flipInX">
                 For those who believe in leaving a mark
               </h1>
-              <p class="banner--text text--2">
+              <p class="banner--text animate__animated animate__fadeInDown">
                 Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.
               </p>
-              <div class="banner--btn btn--4">
+              <div class="banner--btn btn--4 animate__animated animate__fadeInUp">
                 <a href="#" class="btn btn-style btn-primary"> Contact Now</a>
               </div>
             </div>
             <div class="banner--overlay"></div>
           </div>
+          </div>
+        </div>
+        <div class="control-prev-next">
+       <button class="carousel-control-prev control-arrow" type="button" data-target="#carouselExampleControls" data-slide="prev">
+
+          Previous
+        </button>
+        <button class="carousel-control-next control-arrow" type="button" data-target="#carouselExampleControls" data-slide="next">
+         Next
+        </button>
         </div>
       </div>
       <div class="wave">
@@ -1065,7 +1076,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="./slick-1.8.1/slick/slick.min.js"></script>
-    <script>
+    <!-- <script>
       $(".autoplay").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -1077,7 +1088,7 @@
         autoplay: true,
         autoplaySpeed: 2000,
       });
-    </script>
+    </script> -->
     <script src="./lightbox-plus-jquery.min.js"></script>
     <script src="./OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
     <script>
